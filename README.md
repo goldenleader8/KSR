@@ -2,7 +2,7 @@
 
 <p align="center">
   Repository ini berisi <b>source code</b> proyek robotika yang dikembangkan oleh <b>KSR (Kelompok Studi Robotika) UAJY</b>.<br>
-  Mencakup implementasi <b>Inverse Kinematics</b>, simulasi, dan pengembangan sistem kontrol robot.
+  Mencakup implementasi <b>Inverse Kinematics</b>, simulasi, dan pengembangan sistem kontrol robot melalui ROS.
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ KSR/
 
 ---
 
-## KSR ARM BIRU – Inverse Kinematics (3 DOF)
+## INVERSE KINEMATICS ROBOT ARM 3 DOF: "BLUE"
 
 ### Deskripsi
 
@@ -54,7 +54,7 @@ Program ini menghitung sudut-sudut joint (θ1, θ2, θ3) dari sebuah robot lenga
 ### Pendekatan Matematis
 
 Program menggunakan pendekatan **analitik geometris** dengan:
-- Fungsi `clamp()` untuk memastikan nilai input `acos()` berada dalam range **[-1, 1]** agar tidak menghasilkan `NaN`
+- Fungsi `clamp()` untuk memastikan nilai input `acos()` berada dalam range **-1 <= x <= 1** agar tidak menghasilkan `NaN`
 - Perhitungan sudut joint menggunakan hukum cosinus dan trigonometri
 - Output berupa sudut dalam **derajat (°)**
 
