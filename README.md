@@ -88,10 +88,6 @@ Di mana:
 - $a_i$ = link length 
 - $d_i$ = joint offset 
 
-Posisi end-effector diperoleh dari:
-
-$$T_{total} = T_1 \times T_2 \times T_3$$
-
 ### Cara Kompilasi & Menjalankan
 
 ```bash
