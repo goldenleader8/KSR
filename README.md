@@ -55,7 +55,7 @@ Parameter berikut diukur langsung dari model CAD (Autodesk Fusion 360):
 
 ---
 
-## FORWARD KINEMATICS: **`KSR_ARM_BIRU_FK.cpp`**
+## FORWARD KINEMATICS: **`Forward_Kinematics_ARM_3DOF.cpp`**
 
 ### Deskripsi
 
@@ -77,10 +77,10 @@ $$T_{total} = T_1 \times T_2 \times T_3$$
 
 ```bash
 # Kompilasi
-g++ KSR_ARM_BIRU_FK.cpp -o KSR_ARM_BIRU_FK -lm
+g++ Forward_Kinematics_ARM_3DOF.cpp -o Forward_Kinematics_ARM_3DOF -lm
 
 # Jalankan
-./KSR_ARM_BIRU_FK
+./Forward_Kinematics_ARM_3DOF
 ```
 
 ### Cara Penggunaan
@@ -88,11 +88,6 @@ g++ KSR_ARM_BIRU_FK.cpp -o KSR_ARM_BIRU_FK -lm
 ```
 ==[ROBOT ARM BIRU]==
   Robot ini memiliki 3 DOF
-
-  Pilih konvensi D-H:
-  [1] Standard D-H
-  [2] Modified D-H (Craig)
-  Pilihan: 1
 
   ==[LINK 1]==
   Masukkan sudut theta joint ke-1 (-360 s/d 360): 45
@@ -103,12 +98,6 @@ g++ KSR_ARM_BIRU_FK.cpp -o KSR_ARM_BIRU_FK -lm
   ==[LINK 3]==
   Masukkan sudut theta joint ke-3 (-360 s/d 360): 110
 
-  ==[MATRIX TRANSFORMASI TOTAL (Standard D-H)]==
-  | ...  ...  ...  ... |
-  | ...  ...  ...  ... |
-  | ...  ...  ...  ... |
-  | ...  ...  ...  ... |
-
   ==[POSISI END-EFFECTOR]==
   X = -6.5333 cm
   Y = -6.5333 cm
@@ -117,11 +106,11 @@ g++ KSR_ARM_BIRU_FK.cpp -o KSR_ARM_BIRU_FK -lm
 
 ---
 
-## INVERSE KINEMATICS: **`KSR_ARM_BIRU_IK.c`**
+## INVERSE KINEMATICS: **`Inverse_Kinematics_ARM_3DOF.c`**
 
 ### Deskripsi
 
-Program **`KSR_ARM_BIRU_IK.c`** adalah implementasi **Inverse Kinematics (IK)** untuk robot lengan 3 DOF menggunakan bahasa C.
+Program **`Inverse_Kinematics_ARM_3DOF.c`** adalah implementasi **Inverse Kinematics (IK)** untuk robot lengan 3 DOF menggunakan bahasa C.
 
 Program ini menghitung sudut-sudut joint (θ1, θ2, θ3) dari sebuah robot lengan berdasarkan posisi end-effector **(x, y, z)** yang diinputkan oleh pengguna.
 
@@ -136,10 +125,10 @@ Program menggunakan pendekatan **analitik geometris** dengan:
 
 ```bash
 # Kompilasi
-gcc KSR_ARM_BIRU_IK.c -o KSR_ARM_BIRU_IK -lm
+gcc Inverse_Kinematics_ARM_3DOF.c -o Inverse_Kinematics_ARM_3DOF -lm
 
 # Jalankan
-./KSR_ARM_BIRU_IK
+./Inverse_Kinematics_ARM_3DOF
 ```
 
 ### Cara Penggunaan
@@ -177,6 +166,9 @@ Theta 3: XX.XX°
 
 - Princewill, N.C., Steve, T., Omawumi, O.E. (2024). *Development and implementation of a wireless-controlled robotic arm for lifting applications with 6 DOF*. Future Technology, Vol. 03, Issue 01, pp. 25–31. DOI: 10.55670/fpll.futech.3.1.3
 - Corke, P. (2011). *Robotics, Vision and Control: Fundamental Algorithms in MATLAB*. Springer-Verlag.
+- Alavandar, S., & Nigam, M. J. (2008). Inverse kinematics solution of 3DOF planar robot using ANFIS. Int. J. of Computers, Communications & Control, 3, 150-155.
+- Atique, M. M. U., & Ahad, M. A. R. (2014, May). Inverse Kinematics solution for a 3DOF robotic structure using Denavit-Hartenberg Convention. In 2014 international conference on informatics, electronics & vision (ICIEV) (pp. 1-5). IEEE.
+- 
 
 ---
 
