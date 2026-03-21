@@ -26,8 +26,8 @@ Repository ini bertujuan untuk:
 
 ```
 KSR/
-├── KSR_ARM_BIRU_FK.cpp  # Program Forward Kinematics Robot Arm 3 DOF (D-H)
-├── KSR_ARM_BIRU_IK.c    # Program Inverse Kinematics Robot Arm 3 DOF
+├── Forward_Kinematics_ARM_3DOF.cpp  # Program Forward Kinematics Robot Arm 3 DOF (D-H)
+├── Inverse_Kinematics_ARM_3DOF.c    # Program Inverse Kinematics Robot Arm 3 DOF
 ├── LICENSE
 └── README.md
 ```
