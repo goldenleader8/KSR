@@ -6,7 +6,7 @@
 
 const double PHI = 3.141592653589793;
 // Link length
-const double a1 = 10.30;
+const double a1 = 0;
 const double a2 = 12.441;
 const double a3 = 10.688;
 
@@ -16,7 +16,7 @@ const double alpha2 = 0;
 const double alpha3 = 0;
 
 // Offset
-const double d1 = 9.860;
+const double d1 = 10.30;
 const double d2 = 0;
 const double d3 = 0;
 
