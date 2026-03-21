@@ -187,7 +187,6 @@ Theta 3: XX.XX°
 - Corke, P. (2011). *Robotics, Vision and Control: Fundamental Algorithms in MATLAB*. Springer-Verlag.
 - Alavandar, S., & Nigam, M. J. (2008). Inverse kinematics solution of 3DOF planar robot using ANFIS. Int. J. of Computers, Communications & Control, 3, 150-155.
 - Atique, M. M. U., & Ahad, M. A. R. (2014, May). Inverse Kinematics solution for a 3DOF robotic structure using Denavit-Hartenberg Convention. In 2014 international conference on informatics, electronics & vision (ICIEV) (pp. 1-5). IEEE.
-- 
 
 ---
 
