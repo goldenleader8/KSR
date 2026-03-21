@@ -67,7 +67,26 @@ Program ini menghitung posisi end-effector **(x, y, z)** berdasarkan sudut-sudut
 
 Setiap joint direpresentasikan oleh transformation matrix D-H:
 
-$$T_i = \begin{bmatrix} \cos\theta_i & -\sin\theta_i\cos\alpha_i & \sin\theta_i\sin\alpha_i & a_i\cos\theta_i \\ \sin\theta_i & \cos\theta_i\cos\alpha_i & -\cos\theta_i\sin\alpha_i & a_i\sin\theta_i \\ 0 & \sin\alpha_i & \cos\alpha_i & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+$$
+T_i = \begin{bmatrix}
+\cos\theta_i & -\sin\theta_i\cos\alpha_i & \sin\theta_i\sin\alpha_i & a_i\cos\theta_i \\
+\sin\theta_i & \cos\theta_i\cos\alpha_i & -\cos\theta_i\sin\alpha_i & a_i\sin\theta_i \\
+0 & \sin\alpha_i & \cos\alpha_i & d_i \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+Posisi end-effector diperoleh dari:
+
+$$
+T_{total} = T_1 \times T_2 \times T_3
+$$
+
+Di mana:
+- $\theta_i$ = sudut rotasi joint ke-$i$ 
+- $\alpha_i$ = twist angle 
+- $a_i$ = link length 
+- $d_i$ = joint offset 
 
 Posisi end-effector diperoleh dari:
 
