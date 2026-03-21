@@ -5,7 +5,7 @@
 int menu;
 const float PHI = 3.14159263;
 float x, y, z;
-const float a1 = 9.087, a2 = 12.441, a3 = 10.688;
+const float a1 = 10.30, a2 = 12.441, a3 = 10.688;
 float r1, r2, r3;
 float phi1, phi2, phi3;
 float tetha1, tetha2, tetha3;
