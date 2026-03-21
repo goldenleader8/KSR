@@ -116,7 +116,7 @@ g++ Forward_Kinematics_ARM_3DOF.cpp -o Forward_Kinematics_ARM_3DOF -lm
   ==[POSISI END-EFFECTOR]==
   X = -6.5333 cm
   Y = -6.5333 cm
-  Z = 19.4874 cm
+  Z = 19.9274 cm
 ```
 
 ---
