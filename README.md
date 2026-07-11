@@ -1,4 +1,4 @@
-<h1 align="center">UAJY ROBOTICS</h1>
+<h1 align="center">KSR 3 DOF ROBOTIC ARM</h1>
 <p align="center">
   Repository ini berisi <b>source code</b> proyek robotika yang dikembangkan oleh <b>KSR (Kelompok Studi Robotika) UAJY</b>.<br>
   Mencakup implementasi <b>Forward Kinematics</b>, <b>Inverse Kinematics</b>, simulasi, dan pengembangan sistem kontrol robot melalui ROS.
